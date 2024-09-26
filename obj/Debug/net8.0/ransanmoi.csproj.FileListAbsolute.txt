@@ -1,0 +1,14 @@
+/Applications/Document/Learning Unity/ransanmoi/bin/Debug/net8.0/ransanmoi
+/Applications/Document/Learning Unity/ransanmoi/bin/Debug/net8.0/ransanmoi.deps.json
+/Applications/Document/Learning Unity/ransanmoi/bin/Debug/net8.0/ransanmoi.runtimeconfig.json
+/Applications/Document/Learning Unity/ransanmoi/bin/Debug/net8.0/ransanmoi.dll
+/Applications/Document/Learning Unity/ransanmoi/bin/Debug/net8.0/ransanmoi.pdb
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.GeneratedMSBuildEditorConfig.editorconfig
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.AssemblyInfoInputs.cache
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.AssemblyInfo.cs
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.csproj.CoreCompileInputs.cache
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.dll
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/refint/ransanmoi.dll
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.pdb
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.genruntimeconfig.cache
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ref/ransanmoi.dll
