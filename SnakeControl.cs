@@ -4,13 +4,14 @@ using System.IO;
 using System.Text.Json;
 using System.Collections.Generic;
 
+
 namespace ransanmoi
 {
     public class SnakeControl
     {
         public Point food = new Point(8, 8);
         public bool foodExist = false;
-        public int speed = 500;
+        public int speed = 400;
         public int row = 20;
         public int col = 40;
         public string direction = "Right";
@@ -19,6 +20,7 @@ namespace ransanmoi
         public Point _head;
         public string[,] board;
         public bool isPaused;
+        private int currentScore;
 
 
         // Constructor để khởi tạo các đối tượng
@@ -86,31 +88,34 @@ namespace ransanmoi
             try
             {
                 switch (direction)
-                {
-                    case "Right":
-                        _head.Y += 1;
-                        if (_head.Y == col - 1) _head.Y = 1;
-                        break;
-                    case "Left":
-                        _head.Y -= 1;
-                        if (_head.Y == 0) _head.Y = col - 1;
-                        break;
-                    case "Up":
-                        _head.X -= 1;
-                        if (_head.X == 0) _head.X = row - 1;
-                        break;
-                    case "Down":
-                        _head.X += 1;
-                        if (_head.X == row - 1) _head.X = 1;
-                        break;
-                }
+        {
+            case "Right":
+                _head.Y += 1;
+                break;
+            case "Left":
+                _head.Y -= 1;
+                break;
+            case "Up":
+                _head.X -= 1;
+                break;
+            case "Down":
+                _head.X += 1;
+                break;
+        }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error in MoveSnakeHead: {ex.Message}");
             }
         }
-
+            public void GameOver()
+        {
+            if (_head.X <= 0 || _head.X >= row - 1 || _head.Y <= 0 || _head.Y >= col - 1)
+        {
+            Console.WriteLine($"Game Over! The snake has hit the wall. Your score is: {score}");
+            Environment.Exit(0); 
+        }
+        }
         // Đọc vào phím lên, xuống, trái, phải
         public void ListenKey()
         {
