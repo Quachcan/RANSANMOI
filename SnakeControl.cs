@@ -1,5 +1,8 @@
 using System;
 using System.Threading;
+using System.IO;
+using System.Text.Json;
+using System.Collections.Generic;
 
 namespace ransanmoi
 {
@@ -16,6 +19,7 @@ namespace ransanmoi
         public Point _head;
         public string[,] board;
         public bool isPaused;
+
 
         // Constructor để khởi tạo các đối tượng
         public SnakeControl()
@@ -41,7 +45,7 @@ namespace ransanmoi
                         }
                         else if (i == _head.X && j == _head.Y)
                         {
-                            board[i, j] = "*"; // Đầu rắn
+                            board[i, j] = "■"; // Đầu rắn
                         }
                         else
                         {
@@ -50,7 +54,7 @@ namespace ransanmoi
                             {
                                 if (i == body[count].X && j == body[count].Y)
                                 {
-                                    board[i, j] = "+"; // Thân rắn
+                                    board[i, j] = "■"; // Thân rắn
                                     isBodyPart = true;
                                     break;
                                 }
@@ -240,7 +244,7 @@ namespace ransanmoi
         }
 
         // Hiển thị điểm
-        public void ShowPoint()
+            public void ShowPoint()
         {
             try
             {

@@ -12,3 +12,4 @@
 /Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.pdb
 /Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.genruntimeconfig.cache
 /Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ref/ransanmoi.dll
+/Applications/Document/Learning Unity/ransanmoi/obj/Debug/net8.0/ransanmoi.sourcelink.json
